@@ -1,15 +1,9 @@
-//Arreglos y .map
+// Spread operator
 
-// carrito =["Producto 1", "Producto 2", "Producto 3"];
+let lenguajes = ['JavaScript', 'PHP','Python'];
+let frameworks= ['ReactJS','Laravel','Django'];
 
-// carrito.map(producto=>{
-//     return "El producto es "+producto;
-// })
+lt [ultimo]=[...lenguajes].reverse();
 
-const persona={
-    nombre:'Juan',
-    profesion:'Desarrollador web',
-    edad:500
-}
+console.log(ultimo)
 
-console.log(Object.keys(persona))
