@@ -1,39 +1,23 @@
+// Destructuring de objetos
 
-// Object literal
-const persona={
-    nombre:"Juan",
-    profesion:"Desarrollador Web",
-    edad:34
+const aprendiendoJS={
+    version:{
+        nueva:'ES6+',
+        anterior:'ES5'},
+    frameworks:['React','VueJS','AngularJS']
 }
 
-//console.log(persona)
-/*
-const mostrarCliente=mostrarInformacionTarea(persona.nombre,
-    persona.profesion)
-console.log(mostrarCliente)*/
+//Destructuring es extraer valores de un objeto
 
-// Object Construtctor
-function Tarea(nombre, urgencia){
-    this.nombre = nombre;
-    this.urgencia = urgencia;
-}
+//console.log(aprendiendoJS);
 
-//Agregar un prototype a tarea:
-Tarea.prototype.mostrarInformacionTarea = function (){
-    return `La tarea ${this.nombre} tiene una prioridad de ${this.urgencia}`;
-}
+// version anterior
+//let version = aprendiendoJS.version.nueva;
+//let framework = aprendiendoJS.frameworks[1];
 
-
-// Crear nuevas tareas:
-const tarea1 = new Tarea("Aprender JavaScript y React", "Urgente");
-const tarea2 = new Tarea("Pasear al perro", "Media");
-console.log(tarea1);
-console.log(tarea2);
-console.log(tarea1.mostrarInformacionTarea());
-console.log(tarea2.mostrarInformacionTarea());
-
-
-
+// Destructuring forma nueva 
+let {anterior}=aprendiendoJS.version;
+console.log(anterior);
 
 
 
