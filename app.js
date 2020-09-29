@@ -1,13 +1,15 @@
-// métodos o funciones en un objeto
+//Arreglos y .map
+
+// carrito =["Producto 1", "Producto 2", "Producto 3"];
+
+// carrito.map(producto=>{
+//     return "El producto es "+producto;
+// })
 
 const persona={
-    nombre:"Juan",
-    trabajo:"Desarrollador Web",
-    edad:500,
-    musicaRock:true,
-    mostrarInformacion:function(){
-        console.log( `${this.nombre} es ${this.trabajo} y su edad es ${this.edad}`)
-    }
+    nombre:'Juan',
+    profesion:'Desarrollador web',
+    edad:500
 }
 
-persona.mostrarInformacion();
+console.log(Object.keys(persona))
