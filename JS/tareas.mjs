@@ -1,7 +1,14 @@
 
 export const nombreTarea='Pasear al perro'
 
+//exportar una funcion
+export const crearTarea=(tarea, urgencia)=>{
+    return `La tarea ${tarea} tiene una urgencia de ${urgencia}`;
+}
 
+export const tareaCompletada=()=>{
+    console.log('La tarea se completó');
+}
 
 
 /*export default class Tarea{
